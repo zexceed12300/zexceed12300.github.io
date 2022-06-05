@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-slate-900 text-white font-sans">
+<body class="bg-slate-900 text-white font-sans text-sm md:text-base">
     <!-- HEADER -->
     <div style="background-image: url('img/bg-image.jpg')" class="h-screen bg-no-repeat">
-        <div class="bg-black bg-opacity-50 h-screen w-full flex flex-col justify-center items-center">
-                <div class="bg-gradient-to-r from-red-700 to-red-400 p-2 rounded-full mb-4">
+        <div class="bg-black bg-opacity-50 h-screen w-full flex flex-col justify-center items-center text-center">
+                <div class="bg-gradient-to-r from-red-700 to-red-400 p-1 rounded-full mb-4">
                     <img class="w-[140px] h-[140px] md:w-[180px] md:h-[180px]" src="img/raven-logo-vector.png" alt="">
                 </div>    
-                <h1 class="font-bold text-4xl mb-4">r4venz</h1>
-                <p class="text-lg">Just a Fullstack developer dan Linux enthusiast.</p>
-                <p>Welcome to my web page</p>
+                <h1 class="font-bold text-3xl mb-4 md:text-4xl">r4venz</h1>
+                <p class="px-6 md:px-0">Just a Fullstack developer dan Linux enthusiast.</p>
+                <p class="px-6 md:px-0">Welcome to my web page</p>
                 <div class="h-2 w-52 bg-gradient-to-r from-red-600 to-red-300 rounded-full my-5 md:w-60"></div>
                 <a class="w-[300px] py-1 rounded-full bg-gradient-to-r from-red-600 to-red-500 hover:from-white hover:to-white hover:text-black md:w-[350px]" href="https://github.com/zexceed12300" target="_blank">
                     <div class="grid grid-cols-7 items-center px-3">
@@ -29,12 +29,12 @@
     </div>
     <!-- Header -->
     <nav id="home" class="sticky top-0 bg-gray-800 drop-shadow-lg pt-3 pb-3 flex justify-center text-xs md:text-sm xl:text-base">
-        <div class="container flex justify-between items-center font-bold xl:px-44 px-2 py-1">
+        <div class="container flex justify-between items-center font-bold px-2 py-1 xl:px-44">
             <div class="hidden md:block pb-1.5">
                 <a class="font-bold pr-16 md:text-xl xl:text-2xl">r4venz</a>
             </div>
             <div>
-                <button class="font-bold px-4 md:px-8 py-2 rounded-full hover:bg-white hover:text-black" onclick="scrollToTargetAdjusted('about_me', 90)">About Me</button>
+                <button class="hidden md:inline font-bold px-4 md:px-8 py-2 rounded-full hover:bg-white hover:text-black" onclick="scrollToTargetAdjusted('about_me', 90)">About Me</button>
                 <button class="font-bold px-4 md:px-8 py-2 rounded-full hover:bg-white hover:text-black" onclick="scrollToTargetAdjusted('featured_project', 90)">Projects</button>
                 <button class="font-bold px-4 md:px-8 py-2 rounded-full hover:bg-white hover:text-black" onclick="scrollToTargetAdjusted('skillset', 90)">Skillset</button>
             </div>
@@ -46,16 +46,16 @@
     <!-- HEADER -->
     <!-- CONTENT -->
     <div class="py-10 flex justify-center">
-        <div class="container flex flex-col justify-start px-8 xl:px-44">
-            <h1 class="font-bold text-center text-3xl underline underline-offset-8 mb-10" id="about_me">About Me</h1>
-            <div class="w-full columns-1 self-center font-bold text-4xl pb-12 text-center md:text-left">
+        <div class="container flex flex-col justify-start px-4 xl:px-44">
+            <h1 class="font-bold text-center text-2xl underline underline-offset-8 mb-10 md:text-3xl" id="about_me">About Me</h1>
+            <div class="w-full columns-1 self-center font-bold text-3xl pb-12 text-center md:text-left md:text-4xl">
                 <h1 class="pb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-300">Hi Im r4venz,</h1>
                 <h1 class="pb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-300">a special human with some ability</h1>
                 <h1 class="pb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-300">to love learning and working on teamwork.</h1>
             </div>
             <div class="grid md:grid-cols-4 gap-y-16 md:gap-x-12 items-center font-bold mb-16">
-                <div class="flex md:mb-0 md:col-start-1 md:col-span-3 xl:col-span-2 justify-center items-center">
-                    <img class="w-[120px] h-[120px] mr-10" src="img/raven-logo-vector.png" alt="">
+                <div class="flex xl:col-span-2 justify-center items-center md:mb-0 md:col-start-1 md:col-span-3">
+                    <img class="w-[120px] h-[120px] mr-5" src="img/raven-logo-vector.png" alt="">
                     <div class="font-normal">
                         <h2 class="font-bold text-2xl mb-4">Biography</h2>
                         <p class="text-3">Jika Anda memberi saya mainan, hal pertama yang akan saya lakukan adalah membongkarnya untuk mengetahui cara kerjanya.</p>
@@ -68,22 +68,22 @@
                     <a class="fa fa-brands fa-instagram text-5xl text-red-400 hover:text-white" href="https://instagram.com/zexceed12300" target="_blank"></a>
                 </div>
             </div>
-            <div class="grid grid-rows-4 md:grid-rows-none md:grid-cols-4 gap-y-4 md:gap-y-0 font-bold text-center mb-20">
-                <div class="row-span-1 md:col-span-1 font-normal text-center md:text-left md:mr-5">
+            <div class="grid gap-y-4 md:grid-cols-4 md:gap-y-0 font-bold text-center mb-20">
+                <div class="md:col-span-1 font-normal text-center md:text-left md:mr-5">
                     <h2 class="font-bold text-2xl mb-3">What I do</h2>
                     <p>Automation, Web Development, 
                     <p>And Data Mining.</p>
                     <p>Besides on that i am also a Fullstack Web Developer</p>
                 </div>
-                <div class="row-span-1 md:col-span-1 bg-gray-800 font-normal px-10 py-4 justify-center rounded-xl mx-16 md:mx-5">
+                <div class="md:col-span-1 bg-gray-800 font-normal px-10 py-4 justify-center rounded-xl mx-16 md:mx-5">
                     <h1 class="font-bold mb-2">Automation</h1>
                     <p class="text-sm">I make a web automation, bot, or even a automation script with python</p>
                 </div>
-                <div class="row-span-1 md:col-span-1 bg-gray-800 font-normal px-10 py-4 justify-center rounded-xl mx-16 md:mx-5">
+                <div class="md:col-span-1 bg-gray-800 font-normal px-10 py-4 justify-center rounded-xl mx-16 md:mx-5">
                     <h1 class="font-bold mb-2">Web Development</h1>
                     <p class="text-sm">I like to build frontend WebUI with CSS framework like TailwindCSS and Bootstrap 5 and always responsive</p>
                 </div>
-                <div class="row-span-1 md:col-span-1 bg-gray-800 font-normal px-10 py-4 justify-center rounded-xl mx-16 md:mx-5">
+                <div class="md:col-span-1 bg-gray-800 font-normal px-10 py-4 justify-center rounded-xl mx-16 md:mx-5">
                     <h1 class="font-bold mb-2">Data Mining</h1>
                     <p class="text-sm">I like scrape any website or find any pattern from datasets</p>
                 </div>
@@ -123,7 +123,7 @@
             </div>
             <h1 class="font-bold text-center text-3xl underline underline-offset-8 mb-10" id="skillset">Skillset</h1>
             <h2 class="text-lg font-bold text-center mb-6">Frameworks</h2>
-            <div class="grid md:grid-cols-1 gap-6 text-sm mb-3 px-5 md:px-16">
+            <div class="grid gap-6 text-sm mb-3 md:px-5 md:grid-cols-1 md:px-16">
                 <div class="col-span-1 grid grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-6 gap-x-16">
                     <div class="row-span-1 bg-gray-800 rounded-xl px-8 py-4">
                         <h1 class="font-bold mb-2 text-lg">Python Telegram Bot</h1>
